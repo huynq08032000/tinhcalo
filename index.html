@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang Tinh Calo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-content">
+            <div class="form-header">
+                <h1>Tính TMR</h1>
+            </div>
+            <form class="form-tinh" id='form-tinh'>
+                <div class="input-wrapper">
+                    <input type="text" name="currentName" placeholder="Tên học viên" autocomplete="off">
+                    <div id="name-error" class="message-error"></div>
+                </div>
+                <div class="input-wrapper">
+                   <input type="text" name="sex" placeholder="Nam/Nữ">
+                   <div id="sex-error" class="message-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" name="age" placeholder="Tuổi" autocomplete="off">
+                    <div id="age-error" class="message-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" name="weight" placeholder="Cân nặng (kg)" autocomplete="off" >
+                    <div id="weight-error" class="message-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" name="height" placeholder="Chiều cao (cm)" autocomplete="off">
+                    <div id="height-error" class="message-error"></div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" name="ex" placeholder="Nặng lượng tập thể dục (Ex (Calo))">
+                    <div id="ex-error" class="message-error"></div>
+                </div>
+                <div class="form-botter">
+                    <button id="tinh-submit" type="submit">Tính</button>
+                </div>
+            </form> 
+            <div class="result">
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        Tên
+                    </div>
+                    <div class="result-num" id="currentName">
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        RMR
+                    </div>
+                    <div class="result-num" id="RMR">
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        AMR
+                    </div>
+                    <div class="result-num" id="AMR">
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        EX
+                    </div>
+                    <div class="result-num" id="resultEX">
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        TMR
+                    </div>
+                    <div class="result-num" id="TMR">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
