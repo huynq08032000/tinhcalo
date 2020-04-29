@@ -20,26 +20,39 @@
                     <div id="name-error" class="message-error"></div>
                 </div>
                 <div class="input-wrapper">
-                   <input type="text" name="sex" placeholder="Nam/Nữ">
-                   <div id="sex-error" class="message-error"></div>
+                   <!-- <input type="text" name="sex" placeholder="Nam/Nữ"> -->
+                    <select name="sex">
+                        <option value="nam" >Nam</option>
+                        <option value="nữ" >Nữ</option>
+                    </select>
+                    <div id="sex-error" class="message-error"></div>
                 </div>
                 <div class="input-wrapper">
-                    <input type="number" name="age" placeholder="Tuổi" autocomplete="off">
+                    <input type="number" name="age" placeholder="Tuổi" autocomplete="off" min="1" step="">
                     <div id="age-error" class="message-error"></div>
                 </div>
                 <div class="input-wrapper">
-                    <input type="number" name="weight" placeholder="Cân nặng (kg)" autocomplete="off" >
+                    <input type="number" name="weight" placeholder="Cân nặng (kg)" autocomplete="off" min="0" step="">
                     <div id="weight-error" class="message-error"></div>
                 </div>
                 <div class="input-wrapper">
-                    <input type="number" name="height" placeholder="Chiều cao (cm)" autocomplete="off">
+                    <input type="number" name="height" placeholder="Chiều cao (cm)" autocomplete="off" min="0" step="">
                     <div id="height-error" class="message-error"></div>
                 </div>
                 <div class="input-wrapper">
                     <input type="number" name="ex" placeholder="Nặng lượng tập thể dục (Ex (Calo))">
                     <div id="ex-error" class="message-error"></div>
                 </div>
-                <div class="form-botter">
+                <div class="input-wrapper">
+                     <select name="dream">
+                        <option value="Tăng cân" >Tăng cân</option>
+                        <option value="Giảm cân" >Giảm cân</option>
+                        <option value="Giữ cân" >Giữ cân</option>
+                     </select>
+                     <div id="dream-error" class="message-error"></div>
+                 </div>
+                <div class="form-fotter">
+                    <button id="clear" type="reset">Làm lại</button>
                     <button id="tinh-submit" type="submit">Tính</button>
                 </div>
             </form> 
@@ -77,6 +90,13 @@
                         TMR
                     </div>
                     <div class="result-num" id="TMR">
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <div class="result-wrapper-content">
+                        Con số calo kì diệu
+                    </div>
+                    <div class="result-num clkd" id='CLKD' >
                     </div>
                 </div>
             </div>
